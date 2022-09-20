@@ -1,0 +1,14 @@
+/* for movies */
+.movie-year{
+    font-size: small;
+}
+.movie-year b{
+    /* font-size: xx-large; */
+    position: relative;
+    bottom: 3px;
+}
+
+.My-logo{
+    height: 40px;
+    width: 60px !important;
+}

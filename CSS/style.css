@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* font-family: "Google Sans Regular"; */
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #3e6383 !important;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #53738f;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 0 100px;  /* top   side */
+    z-index: 1;
+}
+
+.My-logo img{
+    height: 40px;
+    width: 40px;
+}
+
+.My-hamburger{
+    display: none;
+}
+.My-nav-bar ul{
+    /* display: flex; */
+}
+
+.My-nav-bar ul li a {
+    position: relative;
+    top: 5px;
+    display: block;
+    color: #fefefe;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.My-nav-bar ul li a:hover{
+    color: #11101b !important;
+    background-color: #fefefe;
+}
+
+.My-active{
+    color: #11101b !important;
+    background-color: #fefefe;
+}
+
+
+
+
+/*#################################33 
+        SEARCH BAR
+ ############################### */
+ #SecondDiv{
+    background-color: #53738f !important;
+    height: 123px;
+    z-index: 0.1;
+ }
+#SecondDiv h1{
+    width: fit-content;
+}
+#SecondDiv .input-group{
+    height: 70px;
+    width: 80%;
+    margin: auto;
+}
+.input-group-text{
+    border-radius: 50px 0  0px 50px !important;
+}
+.input-group-text i{
+    font-weight: bolder;
+    font-size: x-large;
+    padding-left: 10px;
+}
+
+#SecondDiv input{
+    border-radius: 0 78px 78px 0;
+    font-size: x-large  ;
+}
+#SecondDiv .row{
+    position: relative !important;
+    top: 36px !important;
+}
+
+                    /* 
+                        SEARCH BAR MEDIA QUERY
+                     */
+                     /* @media only screen and (max width) */
+
+.para{
+    position: relative;
+    top: 50px;
+    font-size: large;
+
+}
+
+/* ##########################3
+        Slider
+##########################3 */
+.slider-container{
+    padding: 0 !important;
+    margin: 0;
+    width: 100%;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.My-slider{
+    /* background-color: red; */
+    position: relative;
+    top: 50px;
+    padding: 0px !important;
+    overflow: hidden;
+}
+
+.My-slides{
+    width: 500%;
+    display: flex;
+    position: relative;
+}
+
+.My-slider img{
+    width: 100%;
+    padding: 0;
+}
+
+.My-slides input{
+    display: none;
+}
+
+.My-slide{
+    width: 20%;
+    transition: 1s;
+}
+
+.My-slide img{
+    /* height:500px; */
+    width: 100%;
+    filter : brightness(70%)
+}
+
+/* Manual slider */
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #53738f;
+    padding: 5px;
+    border-radius:  10px;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 0.9;
+}
+.manual-btn:not(:last-child){
+    margin-right: 30px;
+}
+.manual-btn:hover{
+    background-color: #53738f;
+}
+
+
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+
+/* automatic navigation */
+/* .navigation-auto{
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    z-index: 55;
+
+    border: 2px solid red;
+    width: fit-content !important;
+    justify-content: center;
+}
+
+.navigation-auto div{
+    border: 2px solid #53738f;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+} */
+
+
+
+/* ########################################3
+            Trending Tab
+########################################### */
+#TrendingSection{
+    position: relative;
+    top: 85px;
+}
+
+
+#TrendingSection  #hd{
+    position: absolute;
+    z-index: 2;
+    background-color: #fefefe;
+    right: 18px;
+    top: 8px;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+#TrendingSection #row1{
+    justify-content: flex-start;
+    width: fit-content;
+    align-items: center;
+}
+#TrendingSection .col{
+    position: relative;
+}
+
+#TrendingSection #row2 img{
+    background-color: red;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 5%;
+}
+
+#TrendingSection img:hover{
+    /* border: 1px solid ; */
+    filter: brightness(50%);
+    transform: scale(1.06);
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+/* ##########################
+        Language
+############################33 */
+.language{
+
+}
+.language img{
+    width: fit-content !important;
+    /* height: 50px !important; */
+}
+.language img:hover{
+    filter: brightness(50%);
+    transform: scale(1.08);
+    transition: 0.5s;
+}
+
+
+/* ##########################
+        Footer
+############################33 */
+
+footer{
+    background-color: #173953;
+    position: relative;
+    top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    Media Queries
+ */
+@media only screen and (max-width:1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width:1100px){
+    header{
+        padding: 0 30px;
+    }
+    #SecondDiv h1{
+        display: none;
+    }
+
+    #SecondDiv .input-group{
+        height: 50px;
+        width: 80%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width:910px){
+    .My-hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .My-hamburger .My-line{
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+    .My-nav-bar{
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: rgb(83,115,143);
+        transition: 0.4s;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .My-nav-bar ul{
+        display: block !important;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transform: 0.5s;
+        opacity: 0;
+    }
+    .My-nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+
+
+    .My-nav-bar.My-active{
+        height: 450px;
+    }
+    .My-nav-bar.My-active ul{
+        opacity: 1;
+    }
+}
